@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/alex_background_color"
+              android:orientation="vertical"
+              tools:context=".ui.zhihu.ZhiHuActivity">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title"/>
+
+    <org.astuetz.pagerslidingtabstrip.PagerSlidingTabStrip
+        xmlns:PagerSlidingTabStrip="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/psts"
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:layout_height="48dp"
+        PagerSlidingTabStrip:pstsDividerPadding="5dp"
+        PagerSlidingTabStrip:pstsIndicatorColor="@color/alex_title_color"
+        PagerSlidingTabStrip:pstsUnderlineColor="#00000000"
+        PagerSlidingTabStrip:pstsDividerColor="#BBBBBB"
+        PagerSlidingTabStrip:pstsIndicatorHeight="2dp"
+        PagerSlidingTabStrip:pstsIndicatorPaddingLR="24dp"
+        PagerSlidingTabStrip:pstsScrollOffset="60dp"
+        PagerSlidingTabStrip:pstsShouldExpand="false"
+        PagerSlidingTabStrip:pstsTabBackground="@drawable/astuetz_pager_sliding_tab_strip_background"
+        PagerSlidingTabStrip:pstsTextColor="#9E9E9E"
+        PagerSlidingTabStrip:pstsTextColorSelected="#6E6E6E"
+        PagerSlidingTabStrip:pstsTextSize="14sp"
+        PagerSlidingTabStrip:pstsTextSizeSelected="15sp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

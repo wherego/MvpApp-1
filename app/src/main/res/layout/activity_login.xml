@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FFFFFF"
+              android:orientation="vertical"
+              tools:ignore="HardcodedText,ContentDescription">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title"/>
+
+    <ImageView
+        android:id="@+id/iv_user_man_logo"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo_login"
+        tools:ignore="ContentDescription"/>
+
+    <LinearLayout
+        android:id="@+id/layout_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_user_man_logo"
+        android:layout_marginTop="56dp"
+        android:orientation="vertical">
+
+        <org.alex.iconinputlayout.IconInputLayout
+            xmlns:IconInputLayout="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iil_phone"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:digits="0123456789"
+            IconInputLayout:hint="请输入您的手机号码"
+            IconInputLayout:inputType="phone"
+            IconInputLayout:leftDrawableResId="@drawable/ic_user_man_contact"
+            IconInputLayout:left_leftPadding="24dp"
+            IconInputLayout:left_rightPadding="8dp"
+            IconInputLayout:maxLength="11"
+            IconInputLayout:rightDrawableResId="@drawable/ic_login_clear"
+            IconInputLayout:right_function="clearInput"
+            IconInputLayout:right_rightPadding="24dp"
+            IconInputLayout:text="13146008029"
+            IconInputLayout:textColor="@color/qg_text_gray_33"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@color/qg_line_1"/>
+
+        <org.alex.iconinputlayout.IconInputLayout
+            xmlns:IconInputLayout="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iil_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            IconInputLayout:digits="@string/alex_digits_pwd"
+            IconInputLayout:hint="请输入您的登录密码"
+            IconInputLayout:inputType="textPassword"
+            IconInputLayout:leftDrawableResId="@drawable/ic_user_man_pwd_normal"
+            IconInputLayout:left_leftPadding="24dp"
+            IconInputLayout:left_rightPadding="8dp"
+            IconInputLayout:maxLength="20"
+            IconInputLayout:rightDrawableResId="@drawable/ic_user_man_see_can"
+            IconInputLayout:rightDrawableResId2="@drawable/ic_user_man_see_cannot"
+            IconInputLayout:right_function="pwdVisibility"
+            IconInputLayout:right_rightPadding="24dp"
+            IconInputLayout:text="123456"
+            IconInputLayout:textColor="@color/qg_text_gray_33"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@color/qg_line_1"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_center"
+        android:orientation="horizontal">
+
+        <org.alex.checkbox.CheckBox
+            xmlns:CheckBox="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cb"
+            android:layout_width="16dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="22dp"
+            android:paddingTop="12dp"
+            CheckBox:cb_canAnim="true"
+            CheckBox:cb_checkMarkWidth="2dp"
+            CheckBox:cb_checkMarkerDuration="200"
+            CheckBox:cb_innerCheckedColor="#FFFFFF"
+            CheckBox:cb_innerNormalColor="#FFFFFF"
+            CheckBox:cb_outBorderRadius="2dp"
+            CheckBox:cb_outBorderWidth="1.5dp"/>
+
+        <TextView
+            android:id="@+id/tv_remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right"
+            android:layout_toRightOf="@+id/cb"
+            android:clickable="true"
+            android:drawablePadding="4dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="36dp"
+            android:paddingTop="12dp"
+            android:text="记住用户名"
+            android:textColor="@color/qg_text_gray_33"
+            android:textColorHint="@color/qg_text_gray_33"
+            android:textSize="12sp"
+            tools:ignore="SmallSp"/>
+
+        <TextView
+            android:id="@+id/tv_reget_login_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:layout_gravity="right"
+            android:paddingLeft="48dp"
+            android:paddingRight="24dp"
+
+            android:text="忘记密码？"
+            android:textColor="@color/qg_text_gray_33"
+            android:textColorHint="@color/qg_text_gray_33"
+            android:textSize="12sp"
+            tools:ignore="SmallSp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_login"
+        style="@style/qg_submit_one"
+        android:layout_below="@+id/layout_read"
+        android:layout_marginTop="16dp"
+        android:text="登 录"/>
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="没有账号？马上去注册>>"
+        android:textColor="@color/qg_text_gray_33"
+        android:textColorHint="@color/qg_text_gray_33"
+        android:textSize="12sp"
+        tools:ignore="SmallSp"/>
+
+</LinearLayout>

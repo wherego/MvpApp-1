@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/layer_list_shadow_rectangle"
+    android:orientation="vertical"
+  >
+
+    <RelativeLayout
+        android:id="@+id/layout_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alex_selector_item_layout"
+        android:clickable="true">
+
+
+        <org.alex.circleimageview.CircleImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/logo_empty"
+            app:innerCircleColor="#CCCCCC"
+            app:innerCircleWidth="4dp"
+            app:outCircleColor="@color/alex_title_color"
+            app:outCircleWidth="0.4dp" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_logo"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="按理说啦是的" />
+
+        <TextView
+            android:id="@+id/tv_label"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="top|left"
+            android:background="@color/alex_title_color"
+            android:gravity="center_horizontal|bottom"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:paddingBottom="4dp"
+            android:rotation="45"
+            android:singleLine="true"
+            android:text="最新"
+            android:textAppearance="?android:textAppearanceLargeInverse"
+            android:textSize="10sp"
+            android:translationX="30dp"
+            android:translationY="-30dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

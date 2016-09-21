@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alex_background_color"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alex_title_height"
+        android:background="@color/alex_title_color">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Mvp RxJava Retrofit OkHttp"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/alex_title_text_size" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_loadingDialog"
+                style="@style/submit_match_red"
+                android:layout_marginTop="16dp"
+                android:text="LoadingDialog" />
+
+
+            <TextView
+                android:id="@+id/tv_oneButtonDialog"
+                style="@style/submit_match_red"
+                android:layout_marginTop="16dp"
+                android:text="OneButtonDialog" />
+
+            <TextView
+                android:id="@+id/tv_taobao"
+                style="@style/submit_match_red"
+                android:layout_marginTop="16dp"
+                android:text="仿IOS版淘宝" />
+
+            <TextView
+                android:id="@+id/tv_notice"
+                style="@style/submit_match_red"
+                android:layout_marginTop="16dp"
+                android:text="通知" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

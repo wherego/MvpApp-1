@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:ignore="ContentDescription,UselessParent">
+
+    <org.alex.view.ObservableScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/alex_selector_item_layout"
+                android:clickable="true">
+
+
+                <TextView
+                    android:id="@+id/tv_content_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.5"
+                    android:maxLines="2"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="16dp"
+                    android:text="@string/info_1"/>
+
+                <TextView
+                    android:id="@+id/tv_explore_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_content_1"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:background="@drawable/alex_selector_item_layout"
+                    android:text="展开"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/alex_selector_item_layout"
+                android:clickable="true">
+
+
+                <TextView
+                    android:id="@+id/tv_content_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.5"
+                    android:maxLines="2"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:text="@string/info_1"/>
+
+                <TextView
+                    android:id="@+id/tv_explore_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_content_2"
+                    android:background="@drawable/alex_selector_item_layout"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:text="展开"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/alex_selector_item_layout"
+                android:clickable="true">
+
+
+                <TextView
+                    android:id="@+id/tv_content_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.5"
+                    android:maxLines="2"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="16dp"
+                    android:text="@string/info_1"/>
+
+                <TextView
+                    android:id="@+id/tv_explore_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_content_3"
+                    android:background="@drawable/alex_selector_item_layout"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:text="展开"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/alex_selector_item_layout"
+                android:clickable="true">
+
+
+                <TextView
+                    android:id="@+id/tv_content_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.5"
+                    android:maxLines="2"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="16dp"
+                    android:text="@string/info_1"/>
+
+                <TextView
+                    android:id="@+id/tv_explore_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_content_4"
+                    android:background="@drawable/alex_selector_item_layout"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:text="展开"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/alex_selector_item_layout"
+                android:clickable="true">
+
+
+                <TextView
+                    android:id="@+id/tv_content_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.5"
+                    android:maxLines="2"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="16dp"
+                    android:text="@string/info_1"/>
+
+                <TextView
+                    android:id="@+id/tv_explore_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_content_5"
+                    android:background="@drawable/alex_selector_item_layout"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:text="展开"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </org.alex.view.ObservableScrollView>
+
+</LinearLayout>

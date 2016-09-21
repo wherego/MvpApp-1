@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="ContentDescription,UselessParent,HardcodedText">
+
+    <org.hellojp.tabsindicator.TabsIndicator
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ti"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/iv_top_background"
+        android:background="#CE93D8"
+        app:ti_dividerColor="#E0F2F1"
+        app:ti_dividerVerticalMargin="10dp"
+        app:ti_dividerWidth="2dp"
+        app:ti_hasDivider="true"
+        app:ti_lineColor="#FF5722"
+        app:ti_lineHeight="2dp"
+        app:ti_lineMarginTab="20dp"
+        app:ti_linePosition="bottom"
+        app:ti_textBackgroundResId="@drawable/selector_view_tabs_item"
+        app:ti_textColor="@drawable/selector_tab"
+        app:ti_textSizeNormal="14sp"
+        app:ti_textSizeSelected="18sp"/>
+</RelativeLayout>

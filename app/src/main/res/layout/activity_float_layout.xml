@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F1F1F1"
+                android:orientation="vertical"
+                tools:ignore="ContentDescription,UselessParent">
+
+
+    <org.alex.floatindicatorlayout.FloatIndicatorLayout
+        android:id="@+id/ftl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="@dimen/title_action_width"
+        android:layout_height="@dimen/title_action_height"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/ic_arrow_back"/>
+
+    <ImageView
+        android:layout_width="@dimen/title_action_width"
+        android:layout_height="@dimen/title_action_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/main_page_download_center_normal_normal"/>
+
+</RelativeLayout>
